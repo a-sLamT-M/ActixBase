@@ -1,0 +1,19 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{author}}"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.5.1"
+actix-rt = "2.9.0"
+anyhow = "1.0.80"
+envy = "0.4.2"
+thiserror = "1.0.57"
+serde = { version = "1.0.197", features = ["derive"] }
+log = "0.4.20"
+fern = "0.6.2"
+chrono = "0.4.34"
+dotenv = "0.15.0"

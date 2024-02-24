@@ -1,0 +1,7 @@
+[template]
+include = ["Cargo.toml", "src/**/*"]
+exclude = ["README.md"]
+
+[placeholders]
+project-name = {type="string", prompt="What is the project name?"}
+authors = {type="string", prompt="Who are the authors?", default="Your Name <you@example.com>"}
