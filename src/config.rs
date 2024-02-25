@@ -6,8 +6,8 @@ pub struct Config {
 }
 
 impl Config {
-    pub fn new(config_type: String) -> envy::Result<Config> {
+    pub fn new(config_type: String) -> anyhow::Result<Config> {
         dotenv::from_filename(format!(".env.{}", config_type))?;
-        envy::from_env::<Config>()
+        envy::from_env().map_err(anyhow::Error::new)
     }
 }
