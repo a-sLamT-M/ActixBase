@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "ClashProfile"
+name = "ActixBase"
 version = "0.1.0"
 dependencies = [
  "actix-rt",
