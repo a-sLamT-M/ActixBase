@@ -8,7 +8,7 @@ use actix_web::{App, HttpServer};
 async fn main() -> std::io::Result<()> {
     let args = std::env::args().collect::<Vec<String>>();
 
-    let environment = args.get(1).unwrap_or(&"default".to_string()).to_string();
+    let environment = args.get(1).unwrap_or(&"dev".to_string()).to_string();
 
     let config = config::Config::new(environment).unwrap_or_else(|err| {
         eprintln!("Failed to read config: {}", err);
