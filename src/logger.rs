@@ -1,4 +1,3 @@
-use anyhow::anyhow;
 use chrono::Local;
 use fern::Dispatch;
 
