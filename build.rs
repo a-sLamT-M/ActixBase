@@ -11,6 +11,6 @@ fn main() {
     let target_env_dev_file = out_path.join(".env.dev");
     let target_env_prod_file = out_path.join(".env.prod");
 
-    fs::copy(env_file, target_env_dev_file).expect("Failed to copy .env.dev file");
-    fs::copy(env_file, target_env_prod_file).expect("Failed to copy .env.prod file");
+    fs::copy(&env_file, target_env_dev_file).expect("Failed to copy .env.dev file");
+    fs::copy(&env_file, target_env_prod_file).expect("Failed to copy .env.prod file");
 }
