@@ -1,5 +1,0 @@
-[template]
-include = ["Cargo.toml", "src/**/*"]
-exclude = ["README.md"]
-
-[placeholders]
